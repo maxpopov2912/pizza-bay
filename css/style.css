@@ -1,0 +1,167 @@
+
+::selection {
+  background: rgba(255, 180, 0, 0.2);
+}
+
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif; 
+            font-size: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            background: #141414;
+        }
+
+        .game {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 343px;
+            height: 600px;
+            border: 4px solid rgba(255, 180, 0, 1);
+            position: relative;
+            background-color: #f8f8f8;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background-image 0.5s ease;
+        }
+
+        .game__step {
+            display: none;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .game__step.active {
+            display: flex;
+        }
+
+        .game__textbox {
+            position: absolute;
+            width: 100%;
+            max-width: 293px;
+            bottom: 50px;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 120%;
+            padding: 18px;
+            background: #fff;
+            border: 4px solid rgba(255, 180, 0, 1);
+        }
+
+        .game__textbox-button {
+            width: fit-content;
+            background: rgba(255, 180, 0, 1);
+            transition: .3s ease;
+            margin-top: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+
+            text-align: left;
+        }
+
+        .game__textbox-button:hover {
+            background: rgb(255, 217, 0);
+        }
+
+        .game__reaction {
+            justify-content: center;
+            background: #fff;
+            padding: 18px;
+            border: 4px solid rgba(255, 180, 0, 1);
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 120%;
+            position: absolute;
+            width: 100%;
+            max-width: 293px;
+            bottom: 150px;
+            display: none;
+        }
+
+        .game__reaction.show {
+            display: flex;
+        }
+
+        .game__button-next {
+            bottom: -16px;
+            position: absolute;
+            width: fit-content;
+            background: rgba(255, 180, 0, 1);
+            transition: .3s ease;
+            padding: 6px 12px;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+
+        .game__button-next:hover {
+            background: rgb(255, 217, 0);
+        }
+
+        .game__final {
+            width: 100%;
+            height: 100%;
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            padding: 24px;
+            background: #fff;
+            text-align: center;
+            display: none;
+        }
+
+        .game__final.show {
+            display: flex;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+
+
+
+.game__logo{
+    max-width: 150px;
+}
+
+.game__text{
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 1);
+
+    margin-top: 65px;
+    margin-bottom: 37px;
+}
+
+.game__promocode{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+
+}

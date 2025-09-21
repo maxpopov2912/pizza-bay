@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Bay Quiz</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div class="game" id="game">
+        <!-- Сцена 1 -->
+        <div class="game__step active" data-scene="1">
+            <div class="game__textbox">
+                <p class="game__question">
+                    Ты оказался в шумном квартале. Среди десятков заведений нужно найти именно Pizza Bay. <br>Как быстрее всего распознать нашу пиццерию среди остальных?
+                </p>
+
+                <button class="game__textbox-button" data-answer="correct">
+                    По фирменной вывеске с логотипом Pizza Bay
+                </button>
+
+                <button class="game__textbox-button" data-answer="wrong">
+                    По запаху свежей пиццы, доносящемуся с входа 
+                </button>
+
+                <button class="game__textbox-button" data-answer="wrong">
+                    По толпе людей у дверей
+                </button>
+            </div>
+
+            <div class="game__reaction">
+                <span class="reaction-text"></span>
+                <button class="game__button-next">
+                    Далее
+                </button>
+            </div>
+        </div>
+
+        <!-- Сцена 2 -->
+        <div class="game__step" data-scene="2">
+            <div class="game__textbox">
+                <p class="game__question">
+                    Внутри ты видишь огромное меню. Нужно выбрать пиццу, чтобы не потеряться среди десятков вариантов.<br>С чего лучше начать знакомство с Pizza Bay?
+                </p>
+
+                <button class="game__textbox-button" data-answer="correct">
+                    Классическая «Маргарита»
+                </button>
+
+                <button class="game__textbox-button" data-answer="wrong">
+                    «4 сыра» для ценителей
+                </button>
+
+                <button class="game__textbox-button" data-answer="wrong">
+                    «Пепперони» — хит компании
+                </button>
+            </div>
+
+            <div class="game__reaction">
+                <span class="reaction-text"></span>
+                <button class="game__button-next">
+                    Далее
+                </button>
+            </div>
+        </div>
+
+        <!-- Сцена 3 -->
+        <div class="game__step" data-scene="3">
+            <div class="game__textbox">
+                <p class="game__question">
+                    Очередь к кассе. Люди заказывают кто через телефон, кто кричит, кто вообще что-то странное покупает.<br>Как сделать заказ?
+                </p>
+
+                <button class="game__textbox-button" data-answer="wrong">
+                    Попросить бабушку позвонить
+                </button>
+
+                <button class="game__textbox-button" data-answer="wrong">
+                    Громко крикнуть "Принесите сюда пиццу!"
+                </button>
+
+                <button class="game__textbox-button" data-answer="correct">
+                    Через мобильное приложение Pizza Bay
+                </button>
+            </div>
+
+            <div class="game__reaction">
+                <span class="reaction-text"></span>
+                <button class="game__button-next">
+                    Далее
+                </button>
+            </div>
+        </div>
+
+        <!-- Сцена 4 -->
+        <div class="game__step" data-scene="4">
+            <div class="game__textbox">
+                <p class="game__question">
+                    Курьеры Pizza Bay разносят пиццу по району. Тебе осталось правильно оформить доставку.<br>Как лучше всего указать адрес, чтобы пицца приехала вовремя и без ошибок?
+                </p>
+
+                <button class="game__textbox-button" data-answer="correct">
+                    В мобильном приложении
+                </button>
+
+                <button class="game__textbox-button" data-answer="wrong">
+                    Уточнить адрес по телефону
+                </button>
+
+                <button class="game__textbox-button" data-answer="wrong">
+                    Написать адрес в комментариях вручную
+                </button>
+            </div>
+
+            <div class="game__reaction">
+                <span class="reaction-text"></span>
+                <button class="game__button-next">
+                    Далее
+                </button>
+            </div>
+        </div>
+
+        <!-- Финальный экран -->
+        <div class="game__final" id="final">
+            <img class="game__logo" src="img/logo.svg" alt="logo">
+            <p class="game__text">Поздравляем! Ты открыл весь путь до Pizza Bay 🍕. 
+            <br><br>
+            Лови свой промокод на скидку!
+            </p>
+
+            <p class="game__promocode">
+                XL32L00S24
+            </p>
+        </div>
+    </div>
+
+    <script src="./js/logic.js"> </script>
+</body>
+</html>
